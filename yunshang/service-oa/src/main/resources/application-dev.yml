@@ -1,0 +1,20 @@
+server:
+  port: 8800
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 查看日志
+  mapper-locations: classpath:com/atguigu/*/mapper/xml/*.xml
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/guigu-oa?serverTimezone=GMT%2B8&useSSL=false&characterEncoding=utf-8
+    username: root
+    password: 307655
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+wechat:
+  mpAppId: wxbcfc79e997ef6ec4
+  mpAppSecret: c2bec2fd5f7748af11ce92a9bb3887e8
+  userInfoUrl: http://lovett.gz2vip.91tunnel.com/admin/wechat/userInfo
